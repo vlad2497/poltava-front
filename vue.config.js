@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
   publicPath: "./",
+
   configureWebpack: {
     resolve: {
       alias: {
@@ -14,4 +15,8 @@ module.exports = {
       extensions: [".js", ".vue", ".json"],
     },
   },
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 };
